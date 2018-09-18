@@ -1,0 +1,28 @@
+<!--
+  Generated template for the WishlistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>wishlist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+    <ion-content padding>
+        <ion-list>
+          <ion-item *ngFor="let w of wlist">
+            <ion-avatar item-left>
+                <img src="http://www.babyneeds.co.in/babyneeds/product_image/{{w.imgs[0].img_url}}">
+             </ion-avatar>
+            <h2>{{w.product_name}}</h2>
+            <p>Rs.: {{w.mrp}}</p>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+

@@ -1,0 +1,56 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+       
+        <ion-item>
+            <ion-label floating>First Name</ion-label>
+            <ion-input type="text"  [(ngModel)]="todo.fname" ngControl="description"></ion-input>
+        
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Last Name</ion-label>
+            <ion-input type="text"  [(ngModel)]="todo.lname" ngControl="description"></ion-input>
+            
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" [(ngModel)]="todo.email" ngControl="title"></ion-input>
+            
+          </ion-item>
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"  [(ngModel)]="todo.password" ngControl="description"></ion-input>
+            
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input type="password"   ngControl="description"></ion-input>
+            
+        </ion-item>
+        
+          <ion-item>
+              <ion-label floating>Mobile no</ion-label>
+              <ion-input type="tel"  [(ngModel)]="todo.mobile" ngControl="description"></ion-input>
+              
+          </ion-item>
+
+      </ion-list>
+         
+          <button ion-button full round  color="app_primary" (click)="getReegister()" >Register</button>
+
+</ion-content>
